@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import './index.css';
 
-class Subscriptions extends Component {
+class Settings extends Component {
   render() {
     return (
       <div className={"right_content"}>
 
-        Subscriptions
+        Settings
 
       </div>
     );
   }
 }
 
-export default Subscriptions;
+export default Settings;
