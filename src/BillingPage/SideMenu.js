@@ -9,6 +9,17 @@ class SideMenu extends Component {
     BillingPage.setState({tab:tab});
   }
 
+  getTabClass(tab){
+    const BillingPage = this.props.BillingPage;
+
+    if(BillingPage.state.tab === tab){
+      return("side_menu_active_element")
+    }
+    else{
+      return("side_menu_element")
+    }
+  }
+
   render() {
     return (
       <div id={"side_menu"}>
@@ -18,23 +29,23 @@ class SideMenu extends Component {
                className={"side_menu_logo"} alt={"side_menu_logo"}/>
         </div>
 
-        <div className={"side_menu_element"} onClick={() => this.loadTab('subscriptions')}>
+        <div className={this.getTabClass('subscriptions')} onClick={() => this.loadTab('subscriptions')}>
           Abonnements
         </div>
 
-        <div className={"side_menu_element"} onClick={() => this.loadTab('receipt')}>
+        <div className={this.getTabClass('receipt')} onClick={() => this.loadTab('receipt')}>
           Reçu
         </div>
 
-        <div className={"side_menu_element"} onClick={() => this.loadTab('settings')}>
+        <div className={this.getTabClass('settings')} onClick={() => this.loadTab('settings')}>
           Paramètres
         </div>
 
-        <div className={"side_menu_element"} onClick={() => this.loadTab('contacts')}>
+        <div className={this.getTabClass('contacts')} onClick={() => this.loadTab('contacts')}>
           Contacts
         </div>
 
-        <div className={"side_menu_element"} onClick={() => this.loadTab('payments')}>
+        <div className={this.getTabClass('payments')} onClick={() => this.loadTab('payments')}>
           Moyens de paiement
         </div>
 
