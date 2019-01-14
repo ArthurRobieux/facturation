@@ -7,7 +7,7 @@ class SubscriptionsSteps extends Component {
     return (
       <div id="steps">
 
-        <button onClick={() => Home.setState({view:'home'})}>Retour</button>
+        <div onClick={() => Home.setState({view:'home'})}>Retour</div>
 
       </div>
     );

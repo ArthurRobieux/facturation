@@ -19,7 +19,7 @@ class Home extends Component {
     if(this.state.view === 'home'){
       return (
         <div id={"billing_app"}>
-            <BillingPage/>
+            <BillingPage Home={this}/>
         </div>
       );
     }

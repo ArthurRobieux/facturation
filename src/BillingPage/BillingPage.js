@@ -11,7 +11,7 @@ class BillingPage extends Component {
   constructor() {
     super();
     this.state = {
-      tab: 'settings',
+      tab: 'subscriptions',
     };
   }
 
@@ -19,7 +19,7 @@ class BillingPage extends Component {
     const tab = this.state.tab;
     if(tab === 'subscriptions') {
       return (
-        <Subscriptions/>
+        <Subscriptions Home={this.props.Home}/>
       )
     }
     else if(tab === 'receipt') {
