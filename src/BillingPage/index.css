@@ -1,0 +1,21 @@
+#billing_page{
+    width: 100%;
+}
+
+.billing_title{
+    color: #2eb0ff;
+}
+
+#side_menu{
+    width: 25%;
+    float: left;
+    background: #ffffff;
+    border-radius: 4px;
+}
+
+.right_content{
+    width: 70%;
+    float: right;
+    background: #ffffff;
+    border-radius: 4px;
+}
