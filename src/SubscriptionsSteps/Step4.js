@@ -3,9 +3,12 @@ import './index.css';
 
 class Step4 extends Component {
 
-  goToStep(step){
+  goToHome(){
     const SubscriptionsSteps = this.props.SubscriptionsSteps;
-    SubscriptionsSteps.setState({step:step});
+    const Home = SubscriptionsSteps.props.Home;
+    
+    SubscriptionsSteps.setState({step:1});
+    Home.setState({view:'home'});
   }
 
 
@@ -14,7 +17,7 @@ class Step4 extends Component {
       <div className="step">
         Validation<br/><br/>
 
-        <button className={"common_button"} onClick={() => this.goToStep(1)}>
+        <button className={"common_button"} onClick={() => this.goToHome()}>
             Continuer sur SportEasy
         </button>
 
