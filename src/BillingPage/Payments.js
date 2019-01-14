@@ -4,9 +4,13 @@ import './index.css';
 class Payments extends Component {
   render() {
     return (
-      <div className={"right_content"}>
+      <div className={"tab_container"}>
 
-        Payments
+        <div className={"tab_block"}>
+          <div className={"tab_title"}>
+            Paiements
+          </div>
+        </div>
 
       </div>
     );

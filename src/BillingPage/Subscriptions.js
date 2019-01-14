@@ -4,11 +4,23 @@ import './index.css';
 class Subscriptions extends Component {
   render() {
     return (
-      <div className={"right_content"}>
 
-        Subscriptions
+      <div className={"tab_container"}>
+
+        <div className={"tab_block"}>
+          <div className={"tab_title"}>
+            Abonnements
+          </div>
+        </div>
+
+        <div className={"tab_block"}>
+          <div className={"tab_title"}>
+            Membres
+          </div>
+        </div>
 
       </div>
+
     );
   }
 }

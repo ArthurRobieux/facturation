@@ -4,9 +4,13 @@ import './index.css';
 class Contacts extends Component {
   render() {
     return (
-      <div className={"right_content"}>
+      <div className={"tab_container"}>
 
-        Contacts
+        <div className={"tab_block"}>
+          <div className={"tab_title"}>
+            Contacts
+          </div>
+        </div>
 
       </div>
     );

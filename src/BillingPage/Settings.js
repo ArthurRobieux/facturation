@@ -4,9 +4,13 @@ import './index.css';
 class Settings extends Component {
   render() {
     return (
-      <div className={"right_content"}>
+      <div className={"tab_container"}>
 
-        Settings
+        <div className={"tab_block"}>
+          <div className={"tab_title"}>
+            Paramètres
+          </div>
+        </div>
 
       </div>
     );

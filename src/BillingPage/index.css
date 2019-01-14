@@ -6,19 +6,13 @@
     color: #2eb0ff;
 }
 
+/*Side Menu*/
+
 #side_menu{
     width: 25%;
     float: left;
     background: #ffffff;
     border-radius: 4px;
-}
-
-.right_content{
-    width: 72%;
-    float: right;
-    background: #ffffff;
-    border-radius: 4px;
-    padding: 10px;
 }
 
 .side_menu_title{
@@ -27,7 +21,9 @@
 
 .side_menu_logo{
     border-radius: 200px;
-    width: 100px;
+    width: 75px;
+    border: 1px solid #ececec;
+    margin: 25px 0 25px 0;
 }
 
 .side_menu_element{
@@ -39,4 +35,22 @@
     background: #DCF1FF;
     color: #2eb0ff;
     border-right: 3px solid #2eb0ff;
+}
+
+/*Tab Content*/
+
+.tab_container{
+    width: 73%;
+    float: right;
+}
+
+.tab_block{
+    background: #ffffff;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.tab_title{
+    font-size: 18px;
 }

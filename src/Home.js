@@ -9,7 +9,7 @@ class Home extends Component {
   constructor() {
     super();
     this.state = {
-      view: 'steps',
+      view: 'home',
     };
   }
 
