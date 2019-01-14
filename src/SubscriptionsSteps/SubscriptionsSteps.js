@@ -4,6 +4,7 @@ import Step1 from './Step1'
 import Step2 from './Step2'
 import Step3 from './Step3'
 import Step4 from './Step4'
+import ProgressBar from './ProgressBar';
 
 class SubscriptionsSteps extends Component {
   constructor() {
@@ -11,6 +12,11 @@ class SubscriptionsSteps extends Component {
     this.state = {
       step: 1,
     };
+  }
+
+  backToHome(Home){
+    Home.setState({view:'home'});
+    this.setState({step: 1});
   }
 
   showStep(){
@@ -27,9 +33,9 @@ class SubscriptionsSteps extends Component {
     return (
       <div id={"subscriptions_steps"}>
 
-        <div className={"back_button"} onClick={() => Home.setState({view:'home'})}>&lsaquo; Retour</div>
+        <div className={"back_button"} onClick={() => this.backToHome(Home)}>&lsaquo; Retour</div>
 
-        <hr/>
+        <ProgressBar step={this.state.step}/>
 
         {this.showStep()}
 

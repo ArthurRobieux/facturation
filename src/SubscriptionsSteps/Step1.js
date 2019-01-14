@@ -11,9 +11,8 @@ class Step1 extends Component {
   render() {
     return (
       <div className="step">
-        1
 
-        <br/><br/>Choisir un forfait<br/><br/>
+        Choisir un forfait<br/><br/>
 
         <button className={"common_button"} onClick={() => this.goToStep(2)}>
             Continuer

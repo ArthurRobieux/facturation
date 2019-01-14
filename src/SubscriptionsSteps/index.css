@@ -14,6 +14,7 @@
 
 .back_button{
     cursor: pointer;
+    width: 100px;
 }
 
 /*Common*/
@@ -26,4 +27,86 @@
     cursor: pointer;
     border: none;
     padding: 0 10px;
+}
+
+/*Progress Bar*/
+
+.progress_bar{
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.progress_line{
+    width: 50%;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 11px;
+    z-index: -1;
+}
+
+#progress_line_1{
+    background: linear-gradient(left, #2eb0ff 0%, #2eb0ff 0%,lightgrey 0%,lightgrey 100%);
+}
+
+#progress_line_2{
+    background: linear-gradient(left, #2eb0ff 0%, #2eb0ff 33%,lightgrey 33%,lightgrey 100%);
+}
+
+#progress_line_3{
+    background: linear-gradient(left, #2eb0ff 0%, #2eb0ff 66%,lightgrey 66%,lightgrey 100%);
+}
+#progress_line_4{
+    background: linear-gradient(left, #2eb0ff 0%, #2eb0ff 100%,lightgrey 100%,lightgrey 100%);
+}
+
+
+.progress_steps{
+    display: flex;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.old_step{
+    display: flex;
+    width: 10px;
+    height: 10px;
+    background: #2eb0ff;
+    border: 5px solid #2eb0ff;
+    border-radius: 100px;
+    color: lightgray;
+    justify-content: center;
+}
+
+.actual_step{
+    display: flex;
+    width: 10px;
+    height: 10px;
+    background: #ffffff;
+    border: 5px solid #2eb0ff;
+    border-radius: 100px;
+    color: #2eb0ff;
+    justify-content: center;
+}
+
+.future_step{
+    display: flex;
+    width: 10px;
+    height: 10px;
+    background: lightgrey;
+    border: 5px solid lightgrey;
+    border-radius: 100px;
+    color: lightgrey;
+    justify-content: center;
+}
+
+.step_label{
+    position: relative;
+    top: 25px;
 }
