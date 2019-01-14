@@ -9,6 +9,9 @@ class Subscriptions extends Component {
   }
 
   render() {
+
+    const Home = this.props.Home;
+
     return (
 
       <div className={"tab_container"}>
@@ -36,7 +39,7 @@ class Subscriptions extends Component {
           </div>
 
           <div className={"tab_text"}>
-            170
+            {Home.state.clubData.count}
           </div>
 
           <div className={"tab_text"}>

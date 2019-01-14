@@ -38,9 +38,10 @@
 .side_menu_element{
     padding: 20px;
     cursor: pointer;
+    transition-duration: 0.1s;
 }
 
-.side_menu_element:hover, .side_menu_element:active{
+.side_menu_element:hover{
     background: #DCF1FF;
     color: #2eb0ff;
     border-right: 3px solid #2eb0ff;

@@ -17,7 +17,7 @@ class Step4 extends Component {
         <br/><br/>Validation<br/><br/>
 
         <button className={"common_button"} onClick={() => this.goToStep(1)}>
-            Valider
+            Continuer sur SportEasy
         </button>
 
       </div>
