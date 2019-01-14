@@ -18,12 +18,13 @@ class Subscriptions extends Component {
             Abonnements
           </div>
 
-          <br/><br/>
+          <div className={"tab_text"}>
           SportEasy Club
-          <br/><br/>
+          </div>
 
+          <div className={"tab_text"}>
           Vous êtes actuellement en période d'essai jusqu'au 8 février 2019 pour l'équipe des Olympiens.
-          <br/><br/>
+          </div>
 
           <button className={"common_button"} onClick={() => this.showSteps()}>Choisir un forfait</button>
 
@@ -33,6 +34,19 @@ class Subscriptions extends Component {
           <div className={"tab_title"}>
             Membres
           </div>
+
+          <div className={"tab_text"}>
+            170
+          </div>
+
+          <div className={"tab_text"}>
+            membres de votre club sont actuellement inscrits à SportEasy.
+          </div>
+
+          <div id={"tab_question"} className={"tab_text"}>
+            Qu'est ce qu'un membre ?
+          </div>
+
         </div>
 
       </div>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './index.css';
+import Banner from './Banner';
 import SideMenu from './SideMenu';
 import Subscriptions from './Subscriptions';
 import Receipt from './Receipt';
@@ -54,7 +55,7 @@ class BillingPage extends Component {
       <div id={"billing_page"}>
 
         <h3 className={"billing_title"}>Gestion de mon abonnement</h3>
-
+        <Banner/>
         <SideMenu BillingPage={this}/>
 
         <div id={"billing_content"}>
