@@ -91,6 +91,36 @@
     display: inline;
 }
 
+/*Table*/
+
+#table{
+    padding: 20px;
+    color: gray;
+}
+
+.row{
+    display: flex;
+    width: 100%;
+    border-top: 1px solid #ececec;
+}
+
+.row:last-child{
+    border-bottom: 1px solid #ececec;
+}
+
+.table_cell{
+    display: inline-block;
+    width: 18%;
+    border-left: 1px solid #ececec;
+    padding: 10px 5px;
+}
+
+.table_cell:last-child{
+    border-right: 1px solid #ececec;
+}
+
+
+
 /*Common*/
 
 .common_button{

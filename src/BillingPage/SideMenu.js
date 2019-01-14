@@ -14,7 +14,7 @@ class SideMenu extends Component {
       <div id={"side_menu"}>
 
         <div className={"side_menu_title"}>
-          <img src={"http://jetudielacom.com/wp-content/uploads/LIDL.jpg"}
+          <img src={"https://i.pinimg.com/236x/7e/67/85/7e6785d9f7860c906d56c30b60b42162.jpg"}
                className={"side_menu_logo"} alt={"side_menu_logo"}/>
         </div>
 

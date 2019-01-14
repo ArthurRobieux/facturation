@@ -6,7 +6,7 @@ class Step4 extends Component {
   goToHome(){
     const SubscriptionsSteps = this.props.SubscriptionsSteps;
     const Home = SubscriptionsSteps.props.Home;
-    
+
     SubscriptionsSteps.setState({step:1});
     Home.setState({view:'home'});
   }
