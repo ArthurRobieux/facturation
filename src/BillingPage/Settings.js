@@ -5,10 +5,10 @@ class Settings extends Component {
   constructor() {
     super();
     this.state = {
-      name: '',
+      name: 'La Raclette',
       adress: '',
       moreAdress: '',
-      zipCode: '',
+      zipCode: '91420',
       city: '',
       country: '',
       formIsCorrect: '',
@@ -127,14 +127,14 @@ class Settings extends Component {
               <div className={"form_text"}>
                 Complément d'adresse
               </div>
-              <input className={"form_input"} type={"text"} placeholder={"1er étage au fond à gauche"} value={this.state.more_adress} onChange={this.handleMoreAdresseChange}/>
+              <input className={"form_input"} type={"text"} placeholder={"1er étage au fond à gauche"} value={this.state.moreAdress} onChange={this.handleMoreAdresseChange}/>
             </div>
 
             <div className={"form_element"}>
               <div className={"form_text"}>
                 Code Postal *
               </div>
-              <input className={"form_input"} type={"text"} placeholder={"92310"} value={this.state.zip_code} onChange={this.handleZipCodeChange}/>
+              <input className={"form_input"} type={"text"} placeholder={"92310"} value={this.state.zipCode} onChange={this.handleZipCodeChange}/>
             </div>
 
             <div className={"form_element"}>
