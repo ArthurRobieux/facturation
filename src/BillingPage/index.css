@@ -63,7 +63,7 @@
 }
 
 .tab_title{
-    font-size: 18px;
+    font-size: 22px;
     text-align: left;
     padding: 0 0 10px 0;
 }
@@ -79,6 +79,8 @@
 
 .tab_text{
     text-align: left;
+    padding: 5px 0;
+    font-size: 14px;
 }
 
 #nb_club_members{
@@ -93,23 +95,24 @@
 
 .tab_form{
     padding: 10px 0;
-    color: gray;
 }
 
 .form_text{
     text-align: left;
     width: 30%;
     display: inline-block;
+    color: gray;
 }
 
 .form_input{
-    height: 44px;
-    border: 1px solid gray;
-    border-radius: 4px;
-    width: 50%;
-    font-size: 15px;
-    padding: 0 10px;
-    background: #ffffff;
+    height: 44px!important;
+    border: 1px solid gray!important;
+    border-radius: 4px!important;
+    width: 50%!important;
+    font-size: 14px!important;
+    padding: 0 10px!important;
+    background: #ffffff!important;
+    float: none!important;
 }
 
 .form_input::placeholder{

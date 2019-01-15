@@ -75,8 +75,8 @@
 
 .old_step{
     display: flex;
-    width: 10px;
-    height: 10px;
+    width: 17px;
+    height: 17px;
     background: #2eb0ff;
     border: 5px solid #2eb0ff;
     border-radius: 100px;
@@ -86,8 +86,8 @@
 
 .actual_step{
     display: flex;
-    width: 10px;
-    height: 10px;
+    width: 17px;
+    height: 17px;
     background: #ffffff;
     border: 5px solid #2eb0ff;
     border-radius: 100px;
@@ -97,8 +97,8 @@
 
 .future_step{
     display: flex;
-    width: 10px;
-    height: 10px;
+    width: 17px;
+    height: 17px;
     background: lightgrey;
     border: 5px solid lightgrey;
     border-radius: 100px;

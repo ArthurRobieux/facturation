@@ -160,7 +160,7 @@ class Step2 extends Component {
 
             <div className={"form_element"}>
               <div className={"form_text"}></div>
-              <button type={"submit"} className={"common_button"}>Enregistrer les modifications</button>
+              <button type={"submit"} className={"common_button"}>Continuer</button>
               {this.showFormSuccess()}
             </div>
 
