@@ -18,5 +18,5 @@ body{
   width: 100%;
   text-align: left;
   margin-bottom: 5px;
-  font-family: "Circular";
+  font-family: "Circular", sans-serif;
 }

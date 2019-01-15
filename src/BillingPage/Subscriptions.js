@@ -38,7 +38,7 @@ class Subscriptions extends Component {
             Membres
           </div>
 
-          <div className={"tab_text"}>
+          <div id={"nb_club_members"} className={"tab_text"}>
             {Home.state.clubData.count}
           </div>
 
