@@ -12,7 +12,9 @@ class Step3 extends Component {
   render() {
     return (
       <div className="step">
-        Moyens de paiements<br/><br/>
+        <div className={"step_title"}>
+          Moyens de paiements
+        </div>
 
         <button className={"common_button"} onClick={() => this.goToStep(4)}>
             Continuer

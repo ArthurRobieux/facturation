@@ -15,7 +15,9 @@ class Step4 extends Component {
   render() {
     return (
       <div className="step">
-        Validation<br/><br/>
+        <div className={"step_title"}>
+          Validation
+        </div>
 
         <button className={"common_button"} onClick={() => this.goToHome()}>
             Continuer sur SportEasy

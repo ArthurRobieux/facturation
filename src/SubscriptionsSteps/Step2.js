@@ -95,81 +95,83 @@ class Step2 extends Component {
   render() {
     return (
       <div className="step">
-        Coordonnées de facturation<br/><br/>
+        <div className={"step_title"}>
+          Coordonnées de facturation
+        </div>
 
-          <div className={"tab_description"}>
-            <div className={"tab_text"}>
-              Nom et adresse de l'association.
-            </div>
-
-            <div className={"tab_text"}>
-              Ces informations figureront sur toutes les factures du compte.
-            </div>
+        <div className={"tab_description"}>
+          <div className={"tab_text"}>
+            Nom et adresse de l'association.
           </div>
 
-          <form className={"tab_form"} onSubmit={this.handleSubmit}>
-
-            <div className={"form_element"}>
-              <div className={"form_text"}>
-                Nom de l'association *
-              </div>
-              <input className={"form_input"} type={"text"} placeholder={"Les Zinzins"} value={this.state.name} onChange={this.handleNameChange}/>
-            </div>
-
-            <div className={"form_element"}>
-              <div className={"form_text"}>
-                Adresse *
-              </div>
-              <input className={"form_input"} type={"text"} placeholder={"7 Allée des Acacias"} value={this.state.adress} onChange={this.handleAdressChange}/>
-            </div>
-
-            <div className={"form_element"}>
-              <div className={"form_text"}>
-                Complément d'adresse
-              </div>
-              <input className={"form_input"} type={"text"} placeholder={"1er étage au fond à gauche"} value={this.state.moreAdress} onChange={this.handleMoreAdresseChange}/>
-            </div>
-
-            <div className={"form_element"}>
-              <div className={"form_text"}>
-                Code Postal *
-              </div>
-              <input className={"form_input"} type={"text"} placeholder={"92310"} value={this.state.zipCode} onChange={this.handleZipCodeChange}/>
-            </div>
-
-            <div className={"form_element"}>
-              <div className={"form_text"}>
-                Ville *
-              </div>
-              <input className={"form_input"} type={"text"} placeholder={"Sèvres"} value={this.state.city} onChange={this.handleCityChange}/>
-            </div>
-
-            <div className={"form_element"}>
-              <div className={"form_text"}>
-                Pays
-              </div>
-              <select className={"form_input"} value={this.state.country} onChange={this.handleCountryChange}>
-                <option value="" disabled></option>
-                <option value="france">France</option>
-                <option value="belgique">Belgique</option>
-                <option value="angleterre">Angleterre</option>
-                <option value="allemagne">Allemagne</option>
-              </select>
-              {/*<input className={"form_input"} type={"text"} placeholder={"France"} value={this.state.country} onChange={this.handleCountryChange}/>*/}
-            </div>
-
-            <div className={"form_element"}>
-              <div className={"form_text"}></div>
-              <button type={"submit"} className={"common_button"}>Continuer</button>
-              {this.showFormSuccess()}
-            </div>
-
-
-          </form>
-
-          <div className={"bottom_infos"}>
-            * mentions obligatoires
+          <div className={"tab_text"}>
+            Ces informations figureront sur toutes les factures du compte.
           </div>
+        </div>
+
+        <form className={"tab_form"} onSubmit={this.handleSubmit}>
+
+          <div className={"form_element"}>
+            <div className={"form_text"}>
+              Nom de l'association *
+            </div>
+            <input className={"form_input"} type={"text"} placeholder={"Les Zinzins"} value={this.state.name} onChange={this.handleNameChange}/>
+          </div>
+
+          <div className={"form_element"}>
+            <div className={"form_text"}>
+              Adresse *
+            </div>
+            <input className={"form_input"} type={"text"} placeholder={"7 Allée des Acacias"} value={this.state.adress} onChange={this.handleAdressChange}/>
+          </div>
+
+          <div className={"form_element"}>
+            <div className={"form_text"}>
+              Complément d'adresse
+            </div>
+            <input className={"form_input"} type={"text"} placeholder={"1er étage au fond à gauche"} value={this.state.moreAdress} onChange={this.handleMoreAdresseChange}/>
+          </div>
+
+          <div className={"form_element"}>
+            <div className={"form_text"}>
+              Code Postal *
+            </div>
+            <input className={"form_input"} type={"text"} placeholder={"92310"} value={this.state.zipCode} onChange={this.handleZipCodeChange}/>
+          </div>
+
+          <div className={"form_element"}>
+            <div className={"form_text"}>
+              Ville *
+            </div>
+            <input className={"form_input"} type={"text"} placeholder={"Sèvres"} value={this.state.city} onChange={this.handleCityChange}/>
+          </div>
+
+          <div className={"form_element"}>
+            <div className={"form_text"}>
+              Pays
+            </div>
+            <select className={"form_input"} value={this.state.country} onChange={this.handleCountryChange}>
+              <option value="" disabled></option>
+              <option value="france">France</option>
+              <option value="belgique">Belgique</option>
+              <option value="angleterre">Angleterre</option>
+              <option value="allemagne">Allemagne</option>
+            </select>
+            {/*<input className={"form_input"} type={"text"} placeholder={"France"} value={this.state.country} onChange={this.handleCountryChange}/>*/}
+          </div>
+
+          <div className={"form_element"}>
+            <div className={"form_text"}></div>
+            <button type={"submit"} className={"common_button"}>Continuer</button>
+            {this.showFormSuccess()}
+          </div>
+
+
+        </form>
+
+        <div className={"bottom_infos"}>
+          * mentions obligatoires
+        </div>
 
 
       </div>
