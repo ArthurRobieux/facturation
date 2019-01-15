@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './index.css';
+import transactions from "./transactions"
 
 class Receipt extends Component {
   render() {
@@ -24,26 +25,20 @@ class Receipt extends Component {
 
             </div>
 
-            <div className={"row"}>
+            <div>
 
-              <div className={"table_cell"}>04/01/2018</div>
-              <div className={"table_cell"}>300.00€</div>
-              <div className={"table_cell"}>PFK49SKE</div>
-              <div className={"table_cell"}>2018</div>
-              <div className={"table_cell"}>Payé</div>
-              <div className={"table_cell"}>-</div>
+              {transactions.transactions.map(transaction => (
+                <div className={"row"}>
 
-            </div>
+                  <div className={"table_cell"}>{transaction.date}</div>
+                  <div className={"table_cell"}>{transaction.amount}</div>
+                  <div className={"table_cell"}>{transaction.reference}</div>
+                  <div className={"table_cell"}>{transaction.subscription}</div>
+                  <div className={"table_cell"}>{transaction.state}</div>
+                  <div className={"table_cell"}>{transaction._links.invoice.url}</div>
 
-            <div className={"row"}>
-
-              <div className={"table_cell"}>12/01/2019</div>
-              <div className={"table_cell"}>420.00€</div>
-              <div className={"table_cell"}>S93JQO23</div>
-              <div className={"table_cell"}>2019</div>
-              <div className={"table_cell"}>En attente</div>
-              <div className={"table_cell"}>-</div>
-
+                </div>
+              ))}
             </div>
 
 

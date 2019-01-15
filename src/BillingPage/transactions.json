@@ -1,0 +1,41 @@
+{
+    "transactions": [
+        {
+            "date": "2019-01-06",
+            "amount": "420",
+            "reference": "ZKDI4ORF",
+            "subscription": "2019",
+            "state": ["PAID"],
+            "_links": {
+                 "invoice" : {
+                       "url": "https://bill",
+                       "method": "GET"
+                  }
+             }
+        },{
+            "date": "2019-01-06",
+            "amount": "200",
+            "reference": "DI1OS94J",
+            "subscription": "2019",
+            "state": ["PAID"],
+            "_links": {
+                 "invoice" : {
+                       "url": "https://bill",
+                       "method": "GET"
+                  }
+             }
+        },{
+            "date": "2019-01-06",
+            "amount": "230",
+            "reference": "CL4JD94I",
+            "subscription": "2018",
+            "state": ["REFUNDED"],
+            "_links": {
+                 "invoice" : {
+                       "url": "https://bill",
+                       "method": "GET"
+                  }
+             }
+        }],
+    "count": 3
+}
