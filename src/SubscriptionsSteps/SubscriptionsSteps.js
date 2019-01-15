@@ -11,6 +11,8 @@ class SubscriptionsSteps extends Component {
     super();
     this.state = {
       step: 1,
+      selectedSubscription: 'year',
+      estimatePrice: 0,
     };
   }
 

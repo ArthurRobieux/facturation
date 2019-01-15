@@ -5,7 +5,7 @@ class Step1 extends Component {
   constructor() {
     super();
     this.state = {
-      selected_subscription: 'year',
+      selectedSubscription: 'year',
       estimatePrice: 0,
     };
   }
@@ -17,13 +17,15 @@ class Step1 extends Component {
   }
 
   changeSubscription(){
-    if(this.state.selected_subscription === 'month'){
-      this.setState({selected_subscription: 'year'});
+    if(this.state.selectedSubscription === 'month'){
+      this.setState({selectedSubscription: 'year'});
+      this.props.SubscriptionsSteps.setState({selectedSubscription: 'year'});
     }
     else{
-      this.setState({selected_subscription: 'month'});
+      this.setState({selectedSubscription: 'month'});
+      this.props.SubscriptionsSteps.setState({selectedSubscription: 'month'});
     }
-    console.log(this.state.selected_subscription)
+    console.log(this.state.selectedSubscription)
   }
 
   updateSubscriptionsVisibility(){
@@ -33,7 +35,7 @@ class Step1 extends Component {
     const year_title = document.getElementById("year_subscription_title");
 
     try {
-      if (this.state.selected_subscription === 'year') {
+      if (this.state.selectedSubscription === 'year') {
         month_info.style.opacity = 0.25;
         year_info.style.opacity = 1;
         month_title.style.color = "#000000";
@@ -50,14 +52,16 @@ class Step1 extends Component {
   }
 
   estimatePrice(){
-    if(this.state.selected_subscription === 'year'){
+    if(this.state.selectedSubscription === 'year'){
       const estimatePrice = this.props.SubscriptionsSteps.props.Home.state.clubData.count * 2;
       this.state.estimatePrice = estimatePrice;
+      this.props.SubscriptionsSteps.state.estimatePrice = estimatePrice;
       return(String(estimatePrice) + "€ / An")
     }
     else{
       const estimatePrice = this.props.SubscriptionsSteps.props.Home.state.clubData.count * 0.25;
       this.state.estimatePrice = estimatePrice;
+      this.props.SubscriptionsSteps.state.estimatePrice = estimatePrice;
       return(String(estimatePrice) + "€ / Mois")
     }
   }
