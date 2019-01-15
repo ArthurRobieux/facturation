@@ -65,11 +65,20 @@
 .tab_title{
     font-size: 18px;
     text-align: left;
+    padding: 0 0 10px 0;
+}
+
+.tab_important_text{
+    padding: 20px;
+    text-align: center;
+}
+
+.tab_description{
+    padding: 10px 0;
 }
 
 .tab_text{
-    padding: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 #nb_club_members{
@@ -78,6 +87,42 @@
 
 #tab_question{
     color: #2eb0ff;
+}
+
+/* Formulaire */
+
+.tab_form{
+    padding: 10px 0;
+    color: gray;
+}
+
+.form_text{
+    text-align: left;
+    width: 30%;
+    display: inline-block;
+}
+
+.form_input{
+    height: 44px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    width: 50%;
+    font-size: 15px;
+    padding: 0 10px;
+    background: #ffffff;
+}
+
+.form_input::placeholder{
+    opacity: 0.5;
+}
+
+option:first-child{
+    opacity: 0.5;
+}
+
+.form_element{
+    padding: 10px 0;
+    text-align: left;
 }
 
 /*Banner*/
@@ -155,4 +200,11 @@
     cursor: pointer;
     border: none;
     padding: 0 10px;
+}
+
+.bottom_infos{
+    color: gray;
+    padding: 30px 0 0 0;
+    font-size: 14px;
+    text-align: left;
 }

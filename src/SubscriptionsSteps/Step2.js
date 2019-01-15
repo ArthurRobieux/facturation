@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './index.css';
+import Settings from '../BillingPage/Settings'
 
-class Step1 extends Component {
+class Step2 extends Component {
 
   goToStep(step){
     const SubscriptionsSteps = this.props.SubscriptionsSteps;
@@ -23,4 +24,4 @@ class Step1 extends Component {
   }
 }
 
-export default Step1;
+export default Step2;

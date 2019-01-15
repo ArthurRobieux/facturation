@@ -21,11 +21,11 @@ class Subscriptions extends Component {
             Abonnements
           </div>
 
-          <div className={"tab_text"}>
+          <div className={"tab_important_text"}>
           SportEasy Club
           </div>
 
-          <div className={"tab_text"}>
+          <div className={"tab_important_text"}>
           Vous êtes actuellement en période d'essai jusqu'au 8 février 2019 pour l'équipe des Olympiens.
           </div>
 
@@ -38,15 +38,15 @@ class Subscriptions extends Component {
             Membres
           </div>
 
-          <div id={"nb_club_members"} className={"tab_text"}>
+          <div id={"nb_club_members"} className={"tab_important_text"}>
             {Home.state.clubData.count}
           </div>
 
-          <div className={"tab_text"}>
+          <div className={"tab_important_text"}>
             membres de votre club sont actuellement inscrits à SportEasy.
           </div>
 
-          <div id={"tab_question"} className={"tab_text"}>
+          <div id={"tab_question"} className={"tab_important_text"}>
             Qu'est ce qu'un membre ?
           </div>
 
