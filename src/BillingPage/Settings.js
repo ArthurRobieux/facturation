@@ -11,6 +11,7 @@ class Settings extends Component {
       zipCode: '',
       city: '',
       country: '',
+      formIsCorrect: '',
     };
     this.handleNameChange = this.handleNameChange.bind(this);
     this.handleAdressChange = this.handleAdressChange.bind(this);
@@ -46,8 +47,44 @@ class Settings extends Component {
   }
 
   handleSubmit(event) {
+    // If form is correct, call the API to validate new data
+    if(this.formIsCorrect()){
+      console.log("Form is correct");
+    }
+    else{
+      console.log("Form is uncorrect");
+    }
     console.log(this.state);
     event.preventDefault();
+  }
+
+  formIsCorrect(){
+
+    // If the required fields are not filled
+    if(this.state.name === "" || this.state.adress === "" || this.state.zipCode === "" || this.state.city === ""){
+      this.setState({formIsCorrect: false});
+      return(false);
+    }
+
+    this.setState({formIsCorrect: true});
+    return(true);
+  }
+
+  showFormSuccess(){
+    if(this.state.formIsCorrect === false){
+      return(
+        <div className={"form_error"}>
+          Formulaire invalide.
+        </div>
+      )
+    }
+    else if(this.state.formIsCorrect === true){
+      return(
+        <div className={"form_success"}>
+          Changements pris en compte.
+        </div>
+      )
+    }
   }
 
   render() {
@@ -112,7 +149,7 @@ class Settings extends Component {
                 Pays
               </div>
               <select className={"form_input"} value={this.state.country} onChange={this.handleCountryChange}>
-                <option value="" disabled selected></option>
+                <option value="" disabled></option>
                 <option value="france">France</option>
                 <option value="belgique">Belgique</option>
                 <option value="angleterre">Angleterre</option>
@@ -124,7 +161,9 @@ class Settings extends Component {
             <div className={"form_element"}>
               <div className={"form_text"}></div>
               <button type={"submit"} className={"common_button"}>Enregistrer les modifications</button>
+              {this.showFormSuccess()}
             </div>
+
 
           </form>
 
