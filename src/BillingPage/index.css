@@ -90,6 +90,9 @@
 #tab_question{
     color: #2eb0ff;
     cursor: pointer;
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 /* Formulaire */
