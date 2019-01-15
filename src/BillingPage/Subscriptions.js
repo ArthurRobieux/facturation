@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
+import Popup from "reactjs-popup";
+
 import './index.css';
+import '../reactjs-popup-patch.css';
 
 class Subscriptions extends Component {
 
@@ -46,9 +49,30 @@ class Subscriptions extends Component {
             membres de votre club sont actuellement inscrits à SportEasy.
           </div>
 
-          <div id={"tab_question"} className={"tab_important_text"}>
-            Qu'est ce qu'un membre ?
-          </div>
+
+          <Popup trigger={<div id={"tab_question"} className={"tab_important_text"}>
+                            Qu'est ce qu'un membre ?
+                          </div>}
+                 modal
+                 closeOnDocumentClick>
+
+            <div>
+              <h2>
+                Qu'est ce qu'un membre ?
+              </h2>
+              <div>
+                Chez SportEasy, toutes les personnes qui se trouvent dans la catégorie "Membre" du menu sont comptabilisés
+                comme des membres. Un membre peut ainsi être un joueur, un coach, un bénévole ou un membre du bureau.
+                Les personnes n'ayant pas activé leurs comptes sont également comptabilisées parmi les membres.
+              </div>
+              <br/><br/>
+              <div>
+                En revanche, les parents d'un joueur ne sont pas comptabilisés dans les membres du club. L'ajout de
+                plusieurs parents ne génère donc pas une facturation supplémentaire.
+              </div>
+            </div>
+
+          </Popup>
 
         </div>
 
