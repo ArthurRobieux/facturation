@@ -6,10 +6,10 @@ class Settings extends Component {
     super();
     this.state = {
       name: 'La Raclette',
-      adress: '',
+      adress: '25 Avenue Jules Ferry',
       moreAdress: '',
       zipCode: '91420',
-      city: '',
+      city: 'Morangis',
       country: '',
       formIsCorrect: '',
     };
