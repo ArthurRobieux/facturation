@@ -94,7 +94,7 @@ class Step2 extends Component {
 
   render() {
     return (
-      <div className="step">
+      <div id={"step2"} className={"step"}>
         <div className={"step_title"}>
           Coordonnées de facturation
         </div>
