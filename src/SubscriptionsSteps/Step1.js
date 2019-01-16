@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './index.css';
+import Popup from "reactjs-popup";
 
 class Step1 extends Component {
   constructor() {
@@ -85,6 +86,41 @@ class Step1 extends Component {
           </div>
           <div className={"subscription_info_element"}>
             Facturation équitable
+            <Popup trigger={<div className={"button_popup"}>?</div>}
+                 modal
+                 closeOnDocumentClick>
+
+            <div>
+              <h2>
+                Qu'est ce que la facturation équitable ?
+              </h2>
+              <div className={"popup_text"}>
+                Chez SportEasy, vous ne payez que pour les membres présents dans votre saison actuelle.
+              </div>
+              <div className={"popup_text"}>
+                Ainsi, tous les trimestres, nous ajustons la facture au nombre de membres présents dans votre saison.
+              </div>
+              <div className={"popup_text"}>
+                Si le nombre de membres est supérieur à celui présent lors de la souscription, nous vous facturons en
+                fonction des trimestres restants pour les nouveaux membres.
+              </div>
+              <div className={"popup_text"}>
+                Exemple : si vous êtes passé de 100 membres à 120 membres entre le début de votre abonnement et le début
+                du second trimestre, nous éditerons une facture complémentaire de 30€ correspondant au nombre de membres
+                ajoutés (20) multiplié par le nombre de trimestres restants (3) multiplié par le prix au trimestre (0.50€.
+              </div>
+              <div className={"popup_text"}>
+                Dans le cas où le nombre de membre est inférieur à celui du jour de votre souscription, nous éditons un
+                avoir valable sur vos prochains réglements, en fonction des trimestres restants.
+              </div>
+              <div className={"popup_text"}>
+                Exemple : si vous êtes passé de 100 membres à 85 membres entre le début de votre abonnement et le début
+                du second trimestre, nous éditerons un avoir de 22,50€ correspondant au nombre de membres supprimés (15)
+                multiplié par le nombre de trimestre restants (3) multiplié par le prix au trimestre (0.50€).
+              </div>
+            </div>
+
+          </Popup>
           </div>
         </div>
 

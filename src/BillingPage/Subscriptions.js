@@ -56,7 +56,7 @@ class Subscriptions extends Component {
                  modal
                  closeOnDocumentClick>
 
-            <div>
+            <div className={"popup_text"}>
               <h2>
                 Qu'est ce qu'un membre ?
               </h2>

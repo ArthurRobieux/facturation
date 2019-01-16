@@ -34,7 +34,7 @@
 }
 
 #month_subscription_info{
-    width: 15%;
+    width: 22%;
     height: fit-content;
     background: #ffffff;
     border-radius: 4px;
@@ -60,7 +60,7 @@
 }
 
 #year_subscription_info{
-    width: 15%;
+    width: 22%;
     height: fit-content;
     background: #ffffff;
     border-radius: 4px;
@@ -359,4 +359,17 @@ input:checked + .slider:before {
     text-align: left;
     color: gray;
     padding: 20px 0 0 0;
+}
+
+.popup_text{
+    font-size: 12px;
+    padding: 10px 0;
+    text-align: left;
+}
+
+.button_popup{
+    display: inline;
+    padding: 0 5px;
+    color: #2eb0ff;
+    cursor: pointer;
 }
