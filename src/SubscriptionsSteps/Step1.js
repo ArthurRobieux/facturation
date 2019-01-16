@@ -8,7 +8,13 @@ class Step1 extends Component {
     this.state = {
       selectedSubscription: 'year',
       estimatePrice: 0,
+      promo: '',
     };
+    this.handlePromoChange = this.handlePromoChange.bind(this);
+  }
+
+  handlePromoChange(event) {
+    this.setState({promo: event.target.value});
   }
 
   goToStep(step){
@@ -181,6 +187,18 @@ class Step1 extends Component {
               </div>
               <div className={"recap_value"}>
                 {this.props.SubscriptionsSteps.props.Home.state.clubData.count}
+              </div>
+            </div>
+
+            <hr className={"hr_step_separator"}/>
+
+            <div className={"recap_element"}>
+              <div className={"recap_category"}>
+                Code Promo
+              </div>
+              <div className={"recap_value"}>
+                  <input className={"step_form_input"} type={"text"} value={this.state.promo}
+                         onChange={this.handlePromoChange}/>
               </div>
             </div>
 
